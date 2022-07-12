@@ -22,7 +22,7 @@ body {
 }
 
 section {
-    margin-top: 200px;
+    margin-top: 10px;
 }
 
 .container {
@@ -615,7 +615,7 @@ section {
     color: black;
     padding: 0 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
     text-transform: uppercase;
     text-transform: uppercase;
@@ -641,6 +641,7 @@ section {
     overflow: hidden;
     background-color: #FFCE42;
     border-radius: 10px;
+    height: 100%;
 }
 
 .movielist .movielist-member .member-img {
@@ -718,6 +719,48 @@ section {
     color: #6c757d;
 }
 
+.formEdit .container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.formEdit .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 15px;
+    background: #FFCE42;
+    color: black;
+    padding: 0 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.formEdit label{
+    padding-right: 30px;
+}
+
+.formEdit img{
+    position: relative;
+    overflow: hidden;
+    /* max-width: 100%; */
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+.formEdit .container .header h1{
+    color: white;
+}
+
+.formEdit .container .row{
+    height: 100vh;
+}
+
+.formEdit label{
+    color: white;
+}
+
 
 
 /* AUDIENCE FOOTER */
@@ -741,6 +784,10 @@ section {
 
 .footer-audience img {
     height: 70px;
+}
+
+.from-edit {
+    margin-top: 10px;
 }
 
 /* CINEMA */
