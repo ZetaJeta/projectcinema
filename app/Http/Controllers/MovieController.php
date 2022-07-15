@@ -91,7 +91,8 @@ class MovieController extends Controller
             $x = $image->move(public_path('assets/img'), $image->getClientOriginalName());
         }
         $movie->save();
-        dd($movie);
+        return redirect('/movies');
+        // dd($movie);
     }
 
     /**

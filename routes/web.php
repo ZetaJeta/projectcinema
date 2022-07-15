@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\AudienceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ Route::get('/', function () {
 // Route::post('/movies',[MovieController::class,'store'])->name('movies.store');
 
 Route::resource('movies',MovieController::class);
+Route::resource('audiences', AudienceController::class);

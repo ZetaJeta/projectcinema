@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\audience;
+use App\Models\Audience;
 use App\Http\Requests\StoreaudienceRequest;
 use App\Http\Requests\UpdateaudienceRequest;
 
@@ -16,6 +16,9 @@ class AudienceController extends Controller
     public function index()
     {
         //
+        $audience = Audience::get();
+        // dd ($audience);
+        return view('audiences.index', ['audiences' => $audience, 'parameter1' => 'isinya']);
     }
 
     /**
