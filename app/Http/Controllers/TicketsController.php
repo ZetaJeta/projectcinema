@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\cinema;
+use App\Models\Tickets;
 use Illuminate\Http\Request;
 
-class CinemaController extends Controller
+class TicketsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,9 +15,8 @@ class CinemaController extends Controller
     public function index()
     {
         //
-        // dd($this);
-        $cinemas = Cinema::get();
-        return view('cinemas.index', ['cinemas' => $cinemas]);
+        $tickets = Tickets::get();
+        return view('tickets.index', ['movies' => $tickets]);
     }
 
     /**
@@ -33,7 +32,7 @@ class CinemaController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \App\Http\Requests\StorecinemaRequest  $request
+     * @param  \App\Http\Requests\StoreTicketsRequest  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -44,10 +43,10 @@ class CinemaController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\cinema  $cinema
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function show(cinema $cinema)
+    public function show(Tickets $tickets)
     {
         //
     }
@@ -55,10 +54,10 @@ class CinemaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\cinema  $cinema
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function edit(cinema $cinema)
+    public function edit(Tickets $tickets)
     {
         //
     }
@@ -66,11 +65,11 @@ class CinemaController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdatecinemaRequest  $request
-     * @param  \App\Models\cinema  $cinema
+     * @param  \App\Http\Requests\UpdateTicketsRequest  $request
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, cinema $cinema)
+    public function update(Request $request, Tickets $tickets)
     {
         //
     }
@@ -78,10 +77,10 @@ class CinemaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\cinema  $cinema
+     * @param  \App\Models\Tickets  $tickets
      * @return \Illuminate\Http\Response
      */
-    public function destroy(cinema $cinema)
+    public function destroy(Tickets $tickets)
     {
         //
     }

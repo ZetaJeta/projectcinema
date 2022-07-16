@@ -30,7 +30,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a href="{{route('movies.index')}}" class="navbar-brand">
                 <img src="/assets/img/logo.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,16 +39,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="movies">Movies</a>
+                        <a href="{{route('movies.index')}}" class="nav-link">Movies</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cinema">Cinema</a>
+                        <a href="{{route('cinemas.index')}}" class="nav-link">Cinema</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="audience">Audience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ticket">Ticket</a>
+                        <a href="{{route('employees.index')}}" class="nav-link">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{route('tickets.index')}}" class="nav-link">Ticket</a>
                     </li>
                 </ul>
             </div>

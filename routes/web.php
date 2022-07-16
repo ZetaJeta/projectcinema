@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
 use App\Http\Controllers\AudienceController;
+use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\TicketsController;
+use App\Http\Controllers\CinemaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +28,6 @@ Route::get('/', function () {
 
 Route::resource('movies',MovieController::class);
 Route::resource('audiences', AudienceController::class);
+Route::resource('employees', EmployeeController::class);
+Route::resource('tickets', TicketsController::class);
+Route::resource('cinemas', CinemaController::class);
