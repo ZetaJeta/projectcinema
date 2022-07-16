@@ -32,6 +32,10 @@ Route::resource('employees', EmployeeController::class);
 Route::resource('tickets', TicketsController::class);
 Route::resource('cinemas', CinemaController::class);
 
+Route::get('/terms', function () {
+    return view('terms');
+});
+
 Route::get('/policy', function () {
     return view('policy');
 });

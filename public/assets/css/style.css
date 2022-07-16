@@ -902,3 +902,13 @@ section {
     line-height: 26px;
     color: #6c757d;
 }
+
+.terms{
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.terms ul{
+    list-style-type: circle;
+}

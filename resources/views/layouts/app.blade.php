@@ -168,16 +168,19 @@
                             Quick Links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Movies</a>
+                            <a href="{{route('movies.index')}}" class="text-reset">Movies</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Cinema</a>
+                            <a href="{{route('cinemas.index')}}" class="text-reset">Cinema</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Audience</a>
+                            <a href="{{route('audiences.index')}}" class="text-reset">Audience</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Ticket</a>
+                            <a href="{{route('employees.index')}}" class="text-reset">Employee</a>
+                        </p>
+                        <p>
+                            <a href="{{route('tickets.index')}}" class="text-reset">Ticket</a>
                         </p>
                     </div>
 
@@ -189,7 +192,7 @@
                             <a href="/policy" class="text-reset">Privacy Policy</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset">Terms & Condition</a>
+                            <a href="/terms" class="text-reset">Terms & Condition</a>
                         </p>
                     </div>
 
@@ -203,9 +206,9 @@
                             info@example.com
                         </p>
                         <p> + 62 xxx xxx xx</p>
-                        <a href="ig"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="fb"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="wa"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
