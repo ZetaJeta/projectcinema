@@ -705,6 +705,14 @@ section {
     font-weight: bolder;
 }
 
+.movielist .movielist-member .member-info h5 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+}
+
 .movielist .movielist-member .member-info span {
     display: f;
     font-size: 13px;

@@ -31,3 +31,7 @@ Route::resource('audiences', AudienceController::class);
 Route::resource('employees', EmployeeController::class);
 Route::resource('tickets', TicketsController::class);
 Route::resource('cinemas', CinemaController::class);
+
+Route::get('/policy', function () {
+    return view('policy');
+});

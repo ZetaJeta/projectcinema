@@ -186,7 +186,7 @@
                             Useful links
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset">Privacy Policy</a>
+                            <a href="/policy" class="text-reset">Privacy Policy</a>
                         </p>
                         <p>
                             <a href="#!" class="text-reset">Terms & Condition</a>
