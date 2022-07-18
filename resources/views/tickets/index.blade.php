@@ -76,35 +76,33 @@
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="mb-3">
                     <div class="dropdown">
-                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Name
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        </div>
-                    </div>
+                        <form>
+                            <select name="audience" class="form-control">
+                                @foreach($audiences as $id => $name)
+                                <option value="{{$id}}">{{$name}}</option>
+                                @endforeach
+                            </select>
 
-                    <div class="dropdown">
-                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Movie
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        </div>
-                    </div>
+                            <select name="employees" class="form-control">
+                                @foreach($employees as $id => $name)
+                                <option value="{{$id}}">{{$name}}</option>
+                                @endforeach
+                            </select>
 
-                    <div class="dropdown">
-                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Studio
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        </div>
-                    </div>
+                            <select name="cinemas" class="form-control">
+                                @foreach($cinemas as $id => $name)
+                                <option value="{{$id}}">{{$name}}</option>
+                                @endforeach
+                            </select>
 
-                    <div class="dropdown">
-                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Employee
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        </div>
+                            <select name="movies" class="form-control">
+                                @foreach($movies as $id => $name)
+                                <option value="{{$id}}">{{$name}}</option>
+                                @endforeach
+                            </select>
+
+                            <input class="btn" type="submit" value="Save">
+                        </form>
                     </div>
                 </div>
 

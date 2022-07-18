@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Audience;
 use App\Models\Tickets;
+use App\Models\Movie;
+use App\Models\Employee;
+use App\Models\Cinema;
 use Illuminate\Http\Request;
 
 class TicketsController extends Controller
@@ -16,7 +20,19 @@ class TicketsController extends Controller
     {
         //
         $tickets = Tickets::get();
-        return view('tickets.index', ['movies' => $tickets]);
+        // return view('tickets.index', ['movies' => $tickets]);
+        $audience = Audience::pluck('name', 'id');
+        $employees = Employee::pluck('name', 'id');
+        $movies = Movie::pluck('name', 'id');
+        $cinemas = Cinema::pluck('name', 'id');
+        // $employee = Movie::pluck('name', 'id');
+        return view('tickets.index', [
+            'tickets' => $tickets,
+            'audiences' => $audience,
+            'movies' => $movies,
+            'cinemas' => $cinemas,
+            'employees' => $employees
+        ]);
     }
 
     /**
