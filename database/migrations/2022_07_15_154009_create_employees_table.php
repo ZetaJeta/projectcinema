@@ -16,9 +16,9 @@ class CreateEmployeesTable extends Migration
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
             $table->string('nik', 32)->unique();
-            $table->string('name', 32);
+            $table->string('name', 64);
             $table->string('phone_number', 32)->unique();
-            $table->string('photo', 32);
+            $table->string('photo', 255);
             $table->timestamps();
         });
     }

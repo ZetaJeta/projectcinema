@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class EmployeeFactory extends Factory
+class MovieFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,11 +14,11 @@ class EmployeeFactory extends Factory
     public function definition()
     {
         $faker = \Faker\Factory::create('id_ID');
+        // $faker->addProvider(new \Bluemmb\Faker\PicsumPhotosProvider($faker));
+        $faker->addProvider(new \Xvladqt\Faker\LoremFlickrProvider($faker));
         return [
-            'name' => $faker->name(),
-            'nik' => $faker->nik,
-            'phone_number' => $faker->phoneNumber(),
-            'photo' => $faker->imageUrl()
+            'name' => $faker->sentence(),
+            'cover' => $faker->imageUrl(500, 500, ['cinema']),
         ];
     }
 }

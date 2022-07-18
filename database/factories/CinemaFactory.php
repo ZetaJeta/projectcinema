@@ -13,8 +13,10 @@ class CinemaFactory extends Factory
      */
     public function definition()
     {
+        $faker = \Faker\Factory::create('id_ID');
         return [
-            //
+            'name' => $faker->name(),
+            'location' => $faker->countryCode()
         ];
     }
 }

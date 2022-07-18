@@ -15,6 +15,6 @@ class EmployeeSeeder extends Seeder
     public function run()
     {
         // DB::insert('')
-        Employee::factory(100)->create();
+        Employee::factory(10)->create();
     }
 }

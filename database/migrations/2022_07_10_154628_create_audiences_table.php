@@ -16,7 +16,7 @@ class CreateAudiencesTable extends Migration
         Schema::create('audiences', function (Blueprint $table) {
             $table->id();
             $table->string("name", 64)->unique();
-            $table->string("phone_number", 16);
+            $table->string("phone_number", 32);
             $table->timestamps();
         });
     }

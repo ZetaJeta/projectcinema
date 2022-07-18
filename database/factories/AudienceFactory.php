@@ -11,10 +11,13 @@ class AudienceFactory extends Factory
      *
      * @return array
      */
+
     public function definition()
     {
+        $faker = \Faker\Factory::create('id_ID');
         return [
-            //
+            'name' => $faker->name,
+            'phone_number' => $faker->phoneNumber
         ];
     }
 }
