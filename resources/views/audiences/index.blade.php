@@ -84,15 +84,28 @@
                         <div class="member-info">
                             <h4>{{$audience->name}}</h4>
                             <h5>{{$audience->phone_number}}</h5>
-                            <div class="button-audience">
-                                <a href="{{route('audiences.edit',['audience'=>$audience->id])}}"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <form action="{{route('audiences.destroy',['audience'=>$audience->id])}}" method="POST">
-                                    @csrf
-                                    @method('delete')
-                                    <a href="#" onclick12312="alert('test')" onclick="$(this).closest('form').submit();"><i class="fa-solid fa-trash-can"></i></a>
-                                </form>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary">
+                                    <a href="{{route('audiences.edit',['audience'=>$audience->id])}}"><i class="fa-solid fa-pen-to-square"></i></a>
+                                </button>
+
+                                <button type="button" class="btn btn-secondary">
+                                    <form action="{{route('audiences.destroy',['audience'=>$audience->id])}}" method="POST">
+                                        @csrf
+                                        @method('delete')
+                                        <a href="#" onclick12312="alert('test')" onclick="$(this).closest('form').submit();"><i class="fa-solid fa-trash-can"></i></a>
+                                    </form>
+                                </button>
                             </div>
                         </div>
+                        <!-- <div class="button1">
+                            <a href="{{route('audiences.edit',['audience'=>$audience->id])}}"><i class="fa-solid fa-pen-to-square"></i></a>
+                            <form action="{{route('audiences.destroy',['audience'=>$audience->id])}}" method="POST">
+                                @csrf
+                                @method('delete')
+                                <a href="#" onclick12312="alert('test')" onclick="$(this).closest('form').submit();"><i class="fa-solid fa-trash-can"></i></a>
+                            </form>
+                        </div> -->
                     </div>
                     @endforeach
 
