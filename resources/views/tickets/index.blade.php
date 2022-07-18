@@ -74,10 +74,43 @@
         </div>
         <div class="row gy-4">
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                asfaf
+                <div class="mb-3">
+                    <div class="dropdown">
+                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Name
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Movie
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Studio
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn1 btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Employee
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                asfaf
+                <img src="" alt="">
             </div>
         </div>
     </div>
