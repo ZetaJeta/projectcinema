@@ -16,20 +16,20 @@
 
         <div class="row">
             <div class="col">
-                <form action="{{route('audiences.update',['audience'=>$audience->id])}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('audiences.update',['audience'=>$audiences->id])}}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('patch')
                     <div class="mb-3">
                         <label for="editAudienceName" class="AudienceName form-label">Name</label>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="name" value="{{$audience->name}}">
+                        <input type="text" name="name" value="{{$audiences->name}}">
                     </div>
                     <div class="mb-3">
                         <label for="editAudienceNumber" class="AudienceName form-label">Phone Number</label>
                     </div>
                     <div class="mb-3">
-                        <input type="text" name="phone_number" value="{{$audience->phone_number}}">
+                        <input type="text" name="phone_number" value="{{$audiences->phone_number}}">
                     </div>
 
                     <input class="btn" type="submit" value="Save">

@@ -103,8 +103,6 @@
                                     @method('delete')
                                     <a href="#" onclick12312="alert('test')" onclick="$(this).closest('form').submit();"><i class="fa-solid fa-trash-can"></i></a>
                                 </form>
-
-
                             </div>
                         </div>
                         <div class="member-info">

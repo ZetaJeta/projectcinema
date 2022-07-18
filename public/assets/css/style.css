@@ -665,6 +665,17 @@ section {
     justify-content: center;
 }
 
+.movielist .movielist-member .button1 {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .movielist .movielist-member .button a {
     transition: color 0.3s;
     color: black;
