@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Audience;
-use App\Http\Requests\StoreaudienceRequest;
-use App\Http\Requests\UpdateaudienceRequest;
+use Illuminate\Http\Request;
 
 class AudienceController extends Controller
 {
@@ -16,9 +15,10 @@ class AudienceController extends Controller
     public function index()
     {
         //
-        $audience = Audience::get();
+        $audiences = Audience::get();
         // dd ($audience);
-        return view('audiences.index', ['audiences' => $audience, 'parameter1' => 'isinya']);
+        // dd($movies);
+        return view('audiences.index', ['audiences' => $audiences]);
     }
 
     /**
@@ -37,9 +37,19 @@ class AudienceController extends Controller
      * @param  \App\Http\Requests\StoreaudienceRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreaudienceRequest $request)
+    public function store(Request $request)
     {
         //
+        // $image = $request->file('image');
+
+        // $x = $image->move(public_path('assets/img'), $image->getClientOriginalName());
+        // $x = $image->move(public_path('images'),uniqid().".jpg");
+        //  dd($x);
+        $audiences = new audience();
+        $audiences->name = $request->name;
+        $audiences->phone_number = $request->phone_number;
+        $audiences->save();
+        return redirect('/audiences');
     }
 
     /**
@@ -62,6 +72,7 @@ class AudienceController extends Controller
     public function edit(audience $audience)
     {
         //
+        return view('audiences.edit', ['audiences' => $audience]);
     }
 
     /**
@@ -71,9 +82,15 @@ class AudienceController extends Controller
      * @param  \App\Models\audience  $audience
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateaudienceRequest $request, audience $audience)
+    public function update(Request $request, audience $audience)
     {
         //
+        $isinya = $request->all();
+        // dd($isinya);
+        $audience->name = $request->name;
+        $audience->phone_number = $request->phone_number;
+        $audience->save();
+        return redirect('/audiences');
     }
 
     /**
@@ -85,5 +102,7 @@ class AudienceController extends Controller
     public function destroy(audience $audience)
     {
         //
+        $audience->delete();
+        return redirect('/audiences');
     }
 }

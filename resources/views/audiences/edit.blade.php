@@ -11,16 +11,16 @@
 <section class="formEdit" id="formEdit">
     <div class="container">
         <div class="header d-flex flex-row mb-3 justify-content-between">
-            <h1 class="heading">Edit Employee</h1>
+            <h1 class="heading">Edit Audience</h1>
         </div>
 
         <div class="row">
             <div class="col">
-                <form action="{{route('employees.update',['audience'=>$audience->id])}}" method="post" enctype="multipart/form-data">
+                <form action="{{route('audiences.update',['audience'=>$audience->id])}}" method="post" enctype="multipart/form-data">
                     @csrf
                     @method('patch')
                     <div class="mb-3">
-                        <label for="editAudienceName" class="audienceName form-label">Name</label>
+                        <label for="editAudienceName" class="AudienceName form-label">Name</label>
                     </div>
                     <div class="mb-3">
                         <input type="text" name="name" value="{{$audience->name}}">

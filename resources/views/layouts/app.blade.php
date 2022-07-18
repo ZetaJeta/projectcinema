@@ -45,7 +45,7 @@
                         <a href="{{route('cinemas.index')}}" class="nav-link">Cinema</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="audience">Audience</a>
+                        <a href="{{route('audiences.index')}}" class="nav-link">Audience</a>
                     </li>
                     <li class="nav-item">
                         <a href="{{route('employees.index')}}" class="nav-link">Employee</a>
